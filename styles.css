@@ -233,6 +233,7 @@ section.inhalt a button:hover{
 
 
 section.anschreiben.text li{
+text-align: justify;
 padding: 10px 15px;
 }
 
