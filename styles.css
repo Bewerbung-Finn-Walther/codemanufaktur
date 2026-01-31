@@ -1,0 +1,407 @@
+html{
+  font-family: Arial;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  
+}
+
+body{
+  margin: 0;
+}
+
+div.body{
+  display: block;
+  margin: 0 auto;
+  background-image: url('images/bewerbung\ hintergrund5\ mirrored\ gradient2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  font-size: 16px;
+  
+}
+
+/* @media (min-width: 2000px) {
+  div.body{
+width: 2000px;
+}} */
+
+header{
+  background-color: rgba(126, 164, 182, 0.6);
+  padding: 10px;
+  margin: -10px 0px;
+  position: sticky;
+  top: 0px;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+a:active{
+  color: #551A8B;
+}
+
+section.home.inhalt a button:active{
+  background-color: rgb(107, 168, 238);
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 0px 20px 0px 0px;
+}
+
+nav ul li button{
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 25px;
+  margin-right: -10px;
+  border-style: none;
+}
+
+nav ul li button:active{
+  background-color: rgba(243, 251, 255, 0.8);
+}
+
+nav ul li button:hover{
+  background-color: rgba(243, 251, 255, 0.5);
+}
+
+nav ul li button.current{
+  background-color: rgb(243, 251, 255);
+}
+
+section.anschrift,section.kontakt{
+  font-size: min(1.5vw, 30px);
+}
+
+h1,h2{
+  color: rgb(66, 154, 196);
+  text-shadow: rgb(157, 222, 252) 0px 0px 3px;
+  text-align: center;
+}
+
+h1{
+margin: 20px auto;
+font-size: 400%;
+}
+
+h2{
+margin: 0 auto;
+margin-bottom: 50px;
+font-size: 150%;
+}
+
+
+
+
+
+div.mitte{
+  display: flex;
+  flex-direction: row;
+  margin-top: -5%;
+}
+
+@media (max-width: 1200px){
+  div.mitte{
+    height: 600px;
+}}
+
+section.anschrift.home{
+  width: 20%;
+  margin: 0 auto auto 2%;
+}
+
+@media (max-width: 1200px){
+  section.anschrift.home{
+    width: 250px;
+}}
+
+section.inhalt.home{
+  width: 50%;
+  margin: auto;
+}
+
+@media (max-width: 1000px){
+  section.inhalt.home{
+    margin-top: 150px;
+    margin-left: -20%;
+  
+  }}
+
+.bewerbungsfoto{
+  width: 25%;
+  margin: auto 2% auto auto;
+  
+}
+
+@media (max-width: 1200px){
+  .bewerbungsfoto{
+    width: 300px;
+}}
+
+.bewerbungsfoto img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+section.inhalt button{
+  color: white;
+}
+
+section.inhalt nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.inhalt nav li button{
+  background-color: rgba(43, 103, 182, 0.822);
+  text-align: center;
+  padding: 5%;
+  font-size: 200%;
+  border-radius: 15px;
+  border-color: rgb(13, 105, 180);
+  border-style: inset;
+  border-width: 3px;
+}
+
+
+@media (min-width: 1200px) {
+  section.inhalt nav li button{
+    font-size: min(2.7vw, 54px);
+}}
+
+section.inhalt nav li{
+  margin: 5%;
+}
+
+section.kontakt li,section.anschrift li{
+  margin-top: 15px;
+
+}
+
+section.kontakt{
+  margin-left: 2%;
+  margin-top: -100px;
+}
+
+
+
+section.inhalt a:hover{
+  text-decoration: none;
+}
+
+section.inhalt a button:hover{
+  background-color: rgb(66, 148, 255);
+}
+
+
+
+@media (min-width: 1200px) {
+  h1{
+    font-size: min(5.3vw, 106px);
+}}
+
+@media (min-width: 1200px) {
+  h2{
+   font-size: min(2vw, 40px);
+}}
+
+
+
+@media (max-width: 1200px) {
+  .anschrift.home, .kontakt.home{
+    font-size: 18px;
+}}
+
+
+/* ANSCHREIBEN */
+
+
+section.anschreiben.text li{
+padding: 10px 15px;
+}
+
+section.anschreiben.text{
+  margin: -20px auto;
+  width: 1200px;
+}
+
+section.anschreiben.text li{
+  line-height: 25px;
+}
+
+@media (max-width: 1200px){
+  section.anschreiben.text, .anschreiben h2{
+    width: 800px;
+}}
+
+@media (max-width: 800px){
+  section.anschreiben.text, .anschreiben h2{
+    width: 550px;
+}}
+
+@media (max-width: 550px){
+  section.anschreiben.text, .anschreiben h2{
+    width: auto;
+}}
+
+.anschreiben.text img{
+  height: 40px;
+}
+
+
+/* LEBENSLAUF */
+  
+
+
+
+div.lebenslauf{
+  display: grid;
+  grid-template-columns:
+    1fr
+    5fr
+    0.5fr
+    5fr
+    1fr;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 20px;
+}
+
+.container:nth-child(1) { grid-column: 2; }
+.container:nth-child(2) { grid-column: 4; }
+.container:nth-child(3) { grid-column: 2; }
+.container:nth-child(4) { grid-column: 4; }
+
+.container{
+  display: grid;
+  grid-template-columns: 150px auto;
+    align-items: baseline;
+}
+
+/* .container [class] {
+  outline: 2px dashed red;
+} */
+
+.PersönlicheDaten{
+  margin-top: -40px;
+}
+
+.überschrift{
+  font-size: 30px;
+  margin: 10px 0px 10px 0;
+  font-weight: bold;
+}
+
+.name{
+  width: max-content;
+  visibility: hidden;
+}
+
+.FinnWalther{
+  text-shadow: rgb(157, 222, 252) 0px 0px 3px;
+  position: relative;
+  font-size: 350%;
+  color: rgb(57, 150, 194);
+  top: 25px;
+  left: -150px;
+  width: max-content;
+}
+
+.zwischenüberschrift{
+  grid-column: 1 / 1;
+  font-weight: bold;
+}
+
+.item:not(.zwischenüberschrift){
+  grid-column: 2 / 2;
+}
+
+.item{
+  margin: 5px 0 5px 0;
+}
+
+.unterpunkt{
+  margin-left: 10px;
+}
+
+.gruppe * {
+margin: 1px 0 1px 0;
+}
+
+/* .Deutsch{
+margin: 5px 0px 0px 0;
+} */
+
+
+
+/* BILDER */
+
+
+.bilder{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.bilder figure{
+  padding: 10px 20px;
+  text-align: center;
+  margin: auto;
+  width: calc(18% + 100px);
+
+}
+
+
+.bilder img{
+  width: 100%;
+  border-radius: 2px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 1px;
+  opacity: 0.8;
+}
+
+.bilder figure a button{
+  border-style: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.bilder img:hover{
+  opacity: 1;
+}
+
+.bilder figcaption{
+  margin-top: 1%;
+  font-size: min(1.4vw, 28px);
+}
+
+@media (max-width: 1200px){
+  .bilder figcaption{
+    font-size: 17px;
+  }}
+
+
+/* li.überschrift{
+  margin-left: -40px;
+  font-size: 50px;
+  margin-bottom: 20px;
+} */
+
